@@ -1,0 +1,54 @@
+Node Js
+--------------
+	a) open software center -> pre approved catlogue -> search application "node" -> Install "node js 19"
+
+	b) check installed node version in your machine
+		open command prompt -> enter command "node --version"    (e.g. v19.4.0)
+	
+	c) check installed npm version in your machine
+		open command prompt -> enter command "npm --version"     (e.g. 9.2.0)
+
+TypeScript 
+-------------
+	a) open command prompt -> enter command "npm install -g typescript"     
+	b) check version of typescript -> enter command "tsc --version"    (e.g. 5.0.4)
+
+Angular 
+-------------
+
+	Installing Latest version of angular
+	a) Enter following command
+		"npm install -g @angular/cli@latest"			(e.g. 15.2.5)
+
+	Install Specific version of angular
+	a) Enter following command
+		"npm install -g @angular/cli@13.3.0"
+
+Code Editor - Visual Studio
+----------------------------
+	Download Link : https://code.visualstudio.com/docs/?dv=winzip
+
+	a) in c:/ drive create a folder to extract VS code as well as to save your angular work
+	b) extract vs code and open "code.exe" (you can create shortcut on desktop)
+	c) install following exetensions
+		1)	HTML Boilerplate		2) Live Server		3) ES7+ React/Redux/React-Native snippets
+
+
+
+ERROR
+-----------------------------------------------------
+node is not recorgnized as an internal or external command
+
+1) ensure you installed node js 
+2) open c:/users/<username-folder>/appdata/Roaming/npm
+	"note- appdata is hidden folder"
+3) copy directory path
+4) search "view advance system settings" in start button
+5) open environment settings
+6) select option path -> click edit
+7) create new and paste directory path
+8) click ok and save changes 
+9) Restart Command prompt. 
+	
+
+

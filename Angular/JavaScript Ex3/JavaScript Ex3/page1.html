@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>JavaScript Ex3</title>
+    <link rel="stylesheet" href="./css/stylerule.css">
+
+    <script>
+        function selectPizza(target)
+        {
+            document.getElementById("ans1").innerHTML = target.value;
+        }
+
+        // Set() is Data structure to save unique elements
+        var selected = new Set();
+        function selectTechnology(target)
+        {
+            console.log(target.checked + " => " + target.value);
+            if(target.checked)
+            {
+                selected.add(target.value);
+            }
+            else
+            {
+                selected.delete(target.value);
+            }
+
+
+            document.getElementById("ans2").innerHTML = Array.from(selected);
+        }
+
+        function selectedOption(target)
+        {
+           
+           
+            document.getElementById("ans3").innerHTML = target.value;
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="header">JavaScript onchange event</h1>
+    <hr>
+
+    <div class="container">
+        <div class="child">
+            <input type="radio" id="option1" value="Margherita Pizza" name="menuitem" onchange="selectPizza(this)">
+            <label for="option1">Margherita Pizza</label>
+
+            <input type="radio" id="option2" value="Sicillian Pizza" name="menuitem" onchange="selectPizza(this)">
+            <label for="option2">Sicillian Pizza</label>
+
+            <input type="radio" id="option3" value="Detroit Pizza" name="menuitem" onchange="selectPizza(this)">
+            <label for="option3">Detroit Pizza</label>
+
+            <input type="radio" id="option4" value="Greek Pizza" name="menuitem" onchange="selectPizza(this)">
+            <label for="option4">Greek Pizza</label>
+        </div>
+
+        <div class="child">
+            <h2 id="ans1" class="output">null</h2>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="child">
+            <input type="checkbox" id="chk1" value="Spring Boot Framework" onchange="selectTechnology(this)">
+            <label for="chk1">Spring Boot Framework</label>
+
+            <input type="checkbox" id="chk2" value="Code Ignitor" onchange="selectTechnology(this)">
+            <label for="chk2">Code Ignitor</label>
+
+            <input type="checkbox" id="chk3" value="React Js" onchange="selectTechnology(this)">
+            <label for="chk3">React Js</label>
+
+            <input type="checkbox" id="chk4" value="Angular 13" onchange="selectTechnology(this)">
+            <label for="chk4">Angular 13</label>
+        </div>
+
+        <div class="child">
+            <h3 id="ans2" class="output">null</h3>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="child">
+            <select onchange="selectedOption(this)">
+                <option value="London" >London</option>
+                <option value="Dubai" >Dubai</option>
+                <option value="California" >California</option>
+                <option value="Pune">Pune</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+        </div>
+
+        <div class="child">
+            <h1 id="ans3" class="output">null</h1>
+        </div>
+    </div>
+</body>
+
+</html>

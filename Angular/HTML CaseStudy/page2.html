@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>
+User Registration
+        </title>
+        <link rel="stylesheet" href="./css/stylerule.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script>
+          function goBack() {
+            window.location.href = "./page1.html";
+         }
+      </script>
+       </head>
+        <body>
+            <div class="main-container">
+                <header>
+                <!-- LEFT SIDE -->
+                <div class="row">
+                <div class="left col-xs-6">   
+                <h1 class="header-title"  onclick="goBack()">Stanley's Pharmacy  |</h1>
+              </div> 
+              <!-- <div class="verticalLine">|</div> -->
+               <!-- RIGHT SIDE -->
+               <div class="right-side float-right right col-xs-6">   
+                <button class="btn primary" href="page2.html">SignUp</button>
+                <button class="btn primary" href="page3.html">Login</button>
+              </div> 
+            </div>
+           
+            </header>
+        </div>
+    
+            <form class="user-register" action="">
+                <div class="user-register container">
+                  <h1>New User Registration</h1>
+                  
+                  <hr>
+              
+                  <p class="form-label">First Name</p>
+                  <input type="text" id="txt-username" >
+      
+                  <p class="form-label">Last Name</p>
+                  <input type="text" id="txt-username" >
+
+                  <hr>
+                  <input type="checkbox" id="chk1" value="TandC" onchange="agreement(this)">
+                  <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+              
+                  <button type="submit" class="savebtn">Save</button>
+                </div>
+        </body>
+   
+</html>

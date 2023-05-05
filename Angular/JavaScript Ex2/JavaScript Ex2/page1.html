@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>JavaScript Ex2</title>
+    <link rel="stylesheet" href="./css/stylerule.css">
+
+    <script>
+        function readUser() {
+            var username = document.getElementById("txt-username").value;
+            alert(username + "[" + username.length + "]");
+        }
+
+        function addition(){
+            var x = Number(document.getElementById("txt-num1").value);
+            var y = Number(document.getElementById("txt-num2").value);
+
+            var ans = x + y;
+            document.getElementById("ans1").innerHTML = "Addition is " + ans;
+        }
+        function subtraction(){
+            var x = Number(document.getElementById("txt-num1").value);
+            var y = Number(document.getElementById("txt-num2").value);
+
+            var ans = x - y;
+            document.getElementById("ans1").innerHTML = "Addition is " + ans;
+        }
+        function multiply(){
+            var x = Number(document.getElementById("txt-num1").value);
+            var y = Number(document.getElementById("txt-num2").value);
+
+            var ans = x * y;
+            document.getElementById("ans1").innerHTML = "Addition is " + ans;
+        }
+        function divide(){
+            var x = Number(document.getElementById("txt-num1").value);
+            var y = Number(document.getElementById("txt-num2").value);
+
+            var ans = x / y;
+            document.getElementById("ans1").innerHTML = "Addition is " + ans;
+        }
+        function maximum(){
+            var x = Number(document.getElementById("txt-x").value);
+            var y = Number(document.getElementById("txt-y").value);
+
+            var ans2 = Math.max(x,y);
+            document.getElementById("ans2").innerHTML = "Maximum number " + ans2;
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="header">JavaScript to read textbox</h1>
+    <hr>
+
+    <div class="container">
+        <input type="text" id="txt-username" class="form-control">
+        <button class="btn w-2 primary" onclick="readUser()">Show User</button>
+    </div>
+
+
+    <div class="container">
+
+        <div class="child">
+            <p class="form-label">Enter number x</p>
+            <input type="text" id="txt-num1" class="form-control w-1">
+
+            <p class="form-label">Enter number y</p>
+            <input type="text" id="txt-num2" class="form-control w-1">
+
+            <br><br>
+            <button class="btn w-2 primary" onclick="addition()">Addition</button>
+            <button class="btn w-2 primary" onclick="subtraction()">Subtraction</button>
+            <button class="btn w-2 primary" onclick="multiply()">Multiplication</button>
+            <button class="btn w-2 primary" onclick="divide()">Division</button>
+        </div>
+
+        <div class="child">
+            <h1 class="output" id="ans1">null</h1>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="child">
+            <p class="form-label">Enter number x</p>
+            <input type="text" id="txt-x" class="form-control w-1">
+
+            <p class="form-label">Enter number y</p>
+            <input type="text" id="txt-y" class="form-control w-1">
+
+            <br><br>
+            <button class="btn w-2 primary" onclick="maximum()">Find Max</button>
+        </div>
+
+        <div class="child">
+            <h1 class="output" id="ans2">null</h1>
+        </div>
+    </div>
+</body>
+
+</html>

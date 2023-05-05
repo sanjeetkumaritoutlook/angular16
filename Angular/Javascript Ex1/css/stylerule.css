@@ -1,0 +1,42 @@
+.header{
+    color:lightgray;
+background-color: gray;
+}
+.header:hover{
+    color:white;
+
+}
+.btn{
+margin:2px;
+padding:5px;
+border: none;
+box-shadow: 2px 2px 2px gray;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 3px gray;
+}
+.w-1{
+    width:50px;
+}
+
+.w-2{
+    width: 100px;
+}
+
+.w-3{
+    width:100px;
+}
+
+.success{
+    background-color: green;
+}
+.danger{
+    background-color: red; 
+}
+
+.primary{
+    background-color: blue; 
+}
+}

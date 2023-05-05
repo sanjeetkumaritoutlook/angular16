@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <title>JavaScript Ex4</title>
+    <link rel="stylesheet" href="./css/stylerule.css">
+    <script>
+         function EnterName()
+        {
+            var y = document.getElementById("txt-username").value;
+            console.log('name'+y);
+            return y;
+        }
+        function selectGender(target)
+        {
+           
+            console.log('gender'+target.value);
+        
+            EnterAge();
+        }
+        function EnterAge()  {
+           // selectGender(x);
+            var z = 0;
+            var x = Number(document.getElementById("txt-age").value);
+            console.log('age'+x);
+            if(selectGender(x)=="male"){
+            if(x>=20 && x <=45){
+              z = 21;
+            } else if(x>=46 && x <=60){
+                z = 30;
+          } else if(x>=61 && x <=80){
+            z = 40;
+        } 
+        }
+            return z;
+     document.write("Eligibility percentage"+z);
+        }
+         function printEligibility() {
+        //     var table1=document.getElementById('firstTable');
+        //     var tds = table1.getElementsByTagName('td');
+        //     for (i = 0; i < tds.length; i++) {
+        //        console.log(tds[i])
+        //   }
+            document.getElementById("ans1").innerHTML = EnterName() + "of age"+ EnterAge() + "and gender" ;
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1 class="header">Condition Checking - Looping and Array</h1>
+    <hr>
+
+    <div class="container">
+        <div class="child">
+            <p class="form-label">Enter Name</p>
+            <input type="text" id="txt-username" oninput="EnterName()">
+            <br><br>
+            <p class="form-label">Select Gender</p>
+            <input type="radio" id="rmale" value="male" name="gender" onchange="selectGender(this)">
+            <label for="rmale">male</label>
+
+            <input type="radio" id="rfemale" value="female" name="gender" onchange="selectGender(this)"> 
+            <label for="rfemale">female</label>
+
+            <br><br>
+            <p class="form-label">Enter age</p>
+            <input type="number" class="form-control w-1" id="txt-age" onchange="EnterAge()">
+
+            <br><br>
+            <button class="btn success" onclick="printEligibility()">Print Percentage</button>
+
+            <p class="form-label">conditions</p>
+            <table class="table" id="firstTable">
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Age Group</th>
+                        <th>Male</th>
+                        <th>Female</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>20-45</td>
+                        <td>21%</td>
+                        <td>25%</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>46-60</td>
+                        <td>30%</td>
+                        <td>35%</td>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>61-80</td>
+                        <td>40%</td>
+                        <td>45%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="child">
+            <h1 id="ans1" class="output">null</h1>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="child">
+            <p class="form-label">Select Menu</p>
+            <select>
+                <option value="-1">Select</option>
+                <option value="coffee">coffee</option>
+                <option value="colddrink">cold drink</option>
+                <option value="pizza">pizza</option>
+                <option value="burger">burger</option>
+            </select>
+
+            <br><br>
+            <p class="form-label">Enter Qtys</p>
+            <input type="number" class="form-control w-2">
+
+            
+            <br><br>
+            <button class="btn success">Get Bill</button>
+
+            <br><br>
+            <p class="form-label">conditions</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Sr.no</th>
+                        <th>Menu item</th>
+                        <th>Cost</th>
+                        <th>On minimum Qtys</th>
+                        <th>Discount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Coffee</td>
+                        <td>Rs.50</Rs></td>
+                        <td>2</td>
+                        <td>5% on net bill</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>Cold Drink</td>
+                        <td>Rs.120</Rs></td>
+                        <td>4</td>
+                        <td>15% on net bill</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Pizza</td>
+                        <td>Rs.250</Rs></td>
+                        <td>2</td>
+                        <td>20% on net bill</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Burger</td>
+                        <td>Rs.100</Rs></td>
+                        <td>4</td>
+                        <td>25% on net bill</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+
+        </div>
+
+        <div class="child">
+            <h3 class="output">Total Bill Amount : <span id="ans-total">null</span></h3>
+            <h3 class="output">Discount Amount : <span id="ans-discount">null</span></h3>
+            <h3 class="output">Payble Bill Amount : <span id="ans-payable">null</span></h3>
+        </div>
+    </div>
+</body>
+
+</html>

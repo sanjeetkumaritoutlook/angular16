@@ -1,0 +1,45 @@
+designing page
+standard naming conventoion
+component creation
+deploy the angular application
+handling form error
+HTTP client
+validation rules
+entire training program
+set up development env:
+
+1.nodejs installed
+npm install -g @angular/cli@latest
+npm view ng version
+
+pluralsight link for css
+pluralsight for React 17
+https://app.pluralsight.com/library/courses/html-css-javascript-big-picture/table-of-contents
+https://app.pluralsight.com/library/courses/react-practical-start/table-of-contents
+
+Securing Angular Apps with OpenID Connect and OAuth 2
+
+https://app.pluralsight.com/library/courses/openid-and-oauth2-securing-angular-apps/table-of-contents
+Angular 14: The Big Picture
+https://app.pluralsight.com/library/courses/angular-14-big-picture/table-of-contents
+
+RxJS in Angular: Reactive Development
+
+https://app.pluralsight.com/library/courses/rxjs-angular-reactive-development/table-of-contents
+Unit Testing in Angular 12
+
+
+https://app.pluralsight.com/library/courses/unit-testing-angular/table-of-contents
+Angular Forms
+https://app.pluralsight.com/library/courses/angular-forms/table-of-contents
+
+Angular Component Communication
+
+https://app.pluralsight.com/library/courses/angular-component-communication/table-of-contents
+Angular 14 Standalone Components: First Look
+
+https://app.pluralsight.com/library/courses/angular-14-standalone-components-first-look/table-of-contents
+
+Angular 12 Services
+
+https://app.pluralsight.com/library/courses/angular-services/table-of-contents
