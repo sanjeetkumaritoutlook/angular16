@@ -1,0 +1,678 @@
+https://code.visualstudio.com/Download#
+https://nodejs.org/en/download/
+
+
+~/.bash-profile
+
+
+1 website- has 100s of web pages (these are dynamic web pages)
+HTML- static web pages
+dynamic web pages(interactiveness to page- use JS)
+java script is object based/loosely-typed inerpreted scripting
+JS is not strict class based language
+it can have object, entities
+pre-defined objects
+---------
+   - core javascript object -
+   [String/Math/Array/RegExp/Date/Number/Function/Boolean/Object
+ Function/Boolean/Object --in advanced js 
+   -Browser  specific Object
+      -navigator/window/document/history/screen/location/
+    Form/TextBox
+
+---
+three global object in JS
+iCompass - question
+45 minutes
+Snapshot testing- react-test-renderer
+  expect(appTree).toMatchSnapshot();  //matcher for snapshot testing
+
+Mock testing- 
+mock test  cases-if other functionalities  is not ready, we can write test cases of our ready function
+mock API from jest
+Code Quality-  Linter  to have consistency
+---ref, context,Higher order Functions
+HOC
+context hook
+https://icompassweb.fs.capgemini.com/iCompass/#/
+
+static review
+code analysiss
+SONAR
+dead code
+unused variables
+
+TDD approach
+testing app js component
+Author of that component
+some unintional changes
+React test jruner
+tree structor
+ctrl+spacebar - for version in package.json
+press u -> tomake test pass
+
+MCQ
+25 code based
+hacker rank - subscription-coding test
+--
+console
+window.alert ; document.getElementbyId
+navigator- vendor  info
+heirarchy:
+navigator - window- document- Form- TextBox
+
+    Object Object (super class)
+Custom Object
+
+---
+how to use context for component
+data flow parent to child
+A->B  -> C
+context API
+useContext hook
+Equifax
+
+----
+coding standard- meaningful name- start withcapital letter TestTypeDemo.js
+Sun Microsystems - oracle
+from java 8 - its functional programming language
+below java 8- not functional
+
+javascript is functional programming language, scripting
+
+custom object  creation
+function creation
+using new keyword-  create object
+write JS in:
+protype based style
+class based style
+Encapsulation is not yet implemented in Es6
+
+Java introduced 1985-1990
+WWW-1985-1990
+static web pages - HTML
+no concept of dynamic pages that time
+
+javascript is interpreted language
+typescript is used base language in angular
+react is library
+react base language is typescript
+in typescript has data types- number, string
+annotation
+java script has no data type
+---
+this keyword in javascript
+
+chain of callback fn
+
+---
+part of code quality
+
+
+go to terminal
+
+semi-colon(;) -separator is optional in javascript if next line is written
+
+error object is there-
+throw exception
+catch
+
+loosely typed means
+type of variables depends on literal value of variales
+three syntax of creating function in javascript
+1. conventional way- function keyword
+
+write function defintion in same file and call it same file
+in js, "" isnot character
+string can be put in single quote or double quote
+
+https://javascript.info/new-function
+
+create function
+create custom object
+ property
+
+behaviour
+
+
+inheritance
+not strict class-based inherirtancein js
+protype based inheritance (Object inheritance)
+three ways:
+ 1) Prototype
+2)__proto__
+3) Object.create()
+
+------8 Sept----
+callback/closure/bind
+ES6
+--
+let/const/closure/rest operator/spread operator
+/template literal syntax/destructing
+arrow function/array enhancements/List/set/map
+Promise-[asynchronous operation]
+Class
+
+async/await in es6
+
+//what you type , becomes the type - so javascript is loosely typed
+parameter to map function is callback function-> arrow function definition
+//template literal means backtick (`)  operator and curly braces- ${emp2.empId}
+Promise is Pre-defined Oject in Javascript
+normallly synchronous calls
+asynchronous call- time related
+setTimeout
+REST API calls
+install one depdendency --->http-server install  8888
+npm install g json-server
+npm install json-server
+json-server --watch emp.json
+
+or run thru npx (if not edit environment variables working --hidden folder appdata/roaming)
+npx json-server --watch emp.json
+
+-----
+there is no guarantee that request will give response or not
+200 or 401 success or failure
+Promise is resolved- if successed /resolved, then
+promise is reject--  catch
+we dont create promise
+we get promise from third party library
+present create 
+parameter to Promise contructor is callbaclk function
+arrow function
+new Promise-create Promise
+
+third
+fetch
+POSTMAN- ui client to  server
+
+ axios
+
+object are creatred in client applicaiton
+console.log shopuld only be in UI layer
+
+only class logic in class file.js
+in Javascript (NodeJS)-----> import is done through require class
+in react-> we use import
+----
+object and 
+MobileClient.js
+
+setter->> to initialize your object properties
+
+precedence over ur constructor initialization
+constructor is invoked or not
+
+one class in one file
+
+json is prefined object in javascript. it has parse (string to json object)  and stringify (json to string) function
+
+HTTP request to server application, might take time to get the response
+client program will not wait in asynchronous application
+execute the rest of execution
+thread goes
+
+make API call in REACT
+async/await keyword
+await keyword has to be used with async
+unless the promise code is returned
+ //sequential code execution
+
+//conclude the promise - use async keyword in function
+
+npx- node package executor
+npx create-react-app reactbasicdemo
+
+node version 18
+npm install create-react-app
+
+--
+jest testing library in React
+to test
+--
+go to src folder- App.js
+replace <div> tag
+  <h1> Welcome to React App</h1>
+npm start
+
+3000-react- facebook
+React is not MVC based framework
+component based approach
+newsfeeds
+
+first file in react function
+main function will be initial point- where execution starts(bootstraps)
+
+babel
+jest
+tslint
+--
+public/ folder-> index.html
+injex.js -->root
+id will differentiate <div>-division
+as react developer- you will create custom tags
+make those tags reusable
+--
+browser dont understand custom tags by default
+<h1> is prefined tags
+
+component tree created in browser
+root
+
+create in /src folder- components
+setupTests.js  - test cases;
+
+predefined component->  React
+one file will have one component
+
+React v18
+where custom comopnent will be mentioned-index.js- ReactDOM.createRoot();
+root.render(</App>)
+
+---
+Two ways of creating componment in React:
+1) functional component  - App.js  -ECMAScript funtion- return something --JSX  -props
+2) class component syntax
+
+props
+javascript expresson syntax -{}  template literal
+
+React Handles Data using
+1) Props
+2) state
+
+file name as js or jsx  extension is same----->
+component name and file name should be same
+
+--
+web-vitals
+
+Patni- IGATE- Capgemini
+//HTML marquee is a scrolling piece of text 
+
+//Coding Metathon-opportunity-MetLife project
+//React engineer requirement
+14-18
+
+bootstra- css
+material design
+angular
+embed bootstrap in react
+----
+
+React Hooks
+mutate cityList in class based component
+bullet list
+React v18
+
+
+----
+lab assignemnt on Greetme
+newemplist
+cityList
+records can be sorted in table heading <th onclick
+-----
+
+setState
+import the useState Hook 
+https://blog.logrocket.com/creating-react-sortable-table/
+
+--13 sept--
+functional component
+class component
+render the data from Array using map function
+CRUD -- search(fetch and display table) - -uses map function
+SASS libery ,material design- icons in tabular format
+how to bind the event
+
+Difference between functional component vs class component
+in React 16.8 version andabove, differences are irrevelant
+
+Below 16.8 version
+ functional component cannoot use/declare state - stateless component
+  class component -can  use both props and state- stateful component
+in 16.8 and above version
+  functional component can use state using hooks
+if work on legacy projects- then we know differences
+topics---
+conditional rendering
+Lifecycle of React component
+ref
+context
+form handling
+HOC- high order component
+useEffect
+Routing api - employee management sysmtem- CRUD  --dont return <div>  in app.js BrowserRouter- return component
+    "react-router-dom":"6.4.0"
+<Link to
+<a href>
+web-vitals
+passing props from parent to child - demo - simple button
+
+routing api
+Users folder or Desktop folder- dont create react app in them- users/one driveis synced- created in C:/ thats it
+componentDidMount() during  initial render- give Promise object axios
+
+url pattern
+npx json-server --watch emp.json
+or
+json-server --watch emp.json
+
+--
+
+no render() in functional component- only return() then
+https://medium.com/swlh/functional-components-and-class-components-1dfcfad6ca1b#:~:text=There%20is%20no%20render%20method,their%20code%20is%20to%20comprehend.
+
+id is primary key column
+pass the parameter in the url
+RESTful web services specification:-----
+post ->  Add 
+get -> fetch
+put- > update-----
+async -- await
+
+event.preventDefault-->prevent my update button to submit the server- client side script
+
+<form action=>
+//material design or bootstrap librry to give icon to update/delete button
+third-party css library
+
+fetch by ID parameter
+//mutating the state
+UPDATE
+one-way data binding- from parent to child through props
+complex componment tree- drawback
+Facebook has 50,000 components- entire facebook develop in React
+initial Render in React
+re-render
+any event get triggered by user in browser, then re-rendering phase
+--
+virtual DOM -lightweight javascript object which is copy of real DOM
+in  JSX retun() only one <div> - single block level element - or <table>
+no two <div>
+
+JSX-> babel
+webpack-> Angular
+in webpack already has babel
+--
+React syntax from ES5 to ES6
+ES5:- var   React.createClass
+ES6: class extends React.component
+
+React both supports server side rendering and client side rendering-but prefers server side
+Typescript in React-->
+typescript compiler
+
+anything read-only is pure
+props are read-only i.e immutable, pure-> props are passed from parent to child component
+1-level hierarchy
+complex tree/heirarchy- then use Redux
+Redux->state management->third-part javascript library-Logger middleware (to log message)- thunk middleware (for API calls)
+in redux- state is common-> share the  state- create Store-- (Common place)
+React Context- alsofor state management-> another library
+Context API
+Redux-Saga-Middleware
+saga and persist middleware
+redux-saga
+redux-persist
+redux-thunk
+componment tree
+-------------------------------------
+friday- redux in  employee management system (React application)
+monday --HOC
+Lab assigment  -movie.json  -lab 5
+two implementation: one without Redux, one with Redux
+
+<Provider> - to share store from index.js
+HOC
+------------
+
+component will subscribe to 
+mapsStateToProps
+mapDispatchToProps
+
+
+React testing  -Jest
+test cases
+code first approach
+css .js class  function  variables  event
+building blocks of react----
+TDD- test driven development
+first test cases, then code
+
+Testing api -Jest
+junit - java
+nunit  -C sharp
+jasmine -javascript framework
+karma - angular
+--
+test runner to run test  cases
+test  cafe  framework
+
+movies lab  - sass library-  two ways  -  
+BU
+
+Self study
+ref
+context
+HOC
+linter configeration
+
+modularity- separating the code
+Spec-[it/test]-  it from jest, test from react only
+expect- excel sheet---  test id module code
+write test cases for both valid and invalid scenarios
+Matchers-  tobeEqual
+simpe
+App.test.js
+npm test
+----
+Suite- logically related
+
+initialization code-setUp
+clearance code -  tearDown
+unit testing for javascript function
+beforeAll()-
+beforeEach()-
+afterAll()=
+afterEach()-
+test.skip
+UI testing for App.js component
+test description- first parameter-test()
+/Hello/i  -> insensitive search
+return type object----> Regular expression
+this- current object
+Event testing- click event
+Cheat Sheet
+
+----
+innormal scenario- every state was different for each component- state is json object- 
+data is passed thru props or state (state is mtable)
+state belong to component
+
+state is updated based on cetain events
+different building blocks
+Action
+Single page application-----SPA
+
+java dispatch
+in redux - manually dispatch to particular action
+https://notepad.pw/3uf2rgjj
+
+cakeStory.js  ----> Redux  example
+bakery
+buy cake- state change
+sell cake-
+-+ incream
+
+---
+Action creation-buyCake=()=>{}
+returning inline javascript object
+
+reducer - two parameter- intial State, action object (in switch case)
+CombinedReducer({})
+dispatch() -> pass action creators
+apply logger to the state
+
+single action creator - reducer  -- that also is fine
+asynchronous operation with Redux
+npm install redux
+npm install logger
+npm intall redux-logger
+
+Drawback of props - then only redux
+delegate pattern
+dispatch() is available in store
+
+Action is plain object -javascript object-  return object
+redux-thunk
+
+
+
+
+
+
+
+state is mutable-> setter function. this.setState
+
+//how to use lifeycle hook in a functional component - useEffect
+//all Hooks are function
+useEffect-  like componentDidRender after render phase
+useEffect reduce the performance sometime
+re-render
+
+--
+persistence is the solution- in memory
+
+Employee Management System - CRUD operation - Amazon.com- navigation link - Routing api
+Server side technology- java..NET
+emp.json dummmy data
+https://notepad.pw/3uf2rgjj
+{objectname.propertyname}
+{emp.empId}
+
+url pattern in <link to=
+CRUD- create -add operation- create form
+
+functional component- useEffect,useState, useParams, useNavigate
+//update- PUT request
+hyperlink navigation -Delete
+
+
+---
+Angular two way data binding
+model to template (UI)
+then template (UI) to model
+
+-----
+
+
+best practice -external css
+shouldComponentUpdate()  return true or false  to change component in browser
+
+useEffect Hook- replacement of life cycle functons used in class component 
+             (as they cannot be used in functional component)
+useEffect hook used in Functional Component 
+mutate the state of complex variables like Arryas,Object
+---
+React is maintaining previous state- prevState
+
+uncontrolled input- from value to becoming undefined
+4200- angular
+
+
+
+
+
+
+
+
+
+
+
+--
+API developer
+
+es6 lab using employee.js
+---
+mobile price
+inherit
+mobile quantity
+smartphone
+android phone
+
+----
+
+variable name should start with small letter
+camel case
+meaningful name -productId
+refactor your code 
+input from program,then third party library
+require function to import libary in js
+https://notepad.pw/3uf2rgjj
+package.json
+declare the dependencies
+or
+npm install
+npm init to create package.json-- similar to pom.xml in java maven
+property - value
+
+"dependencies": {
+    "readline-sync":"1.4.10"
+  },
+or "readline-sync":"*"
+* or ctrl+ space bar for downloading latest version
+
+npm install
+Synchronous Readline for interactively running to have a conversation with the user
+ via a console(TTY)
+https://www.npmjs.com/package/readline-sync
+
+
+
+------
+java -scanner class
+cin cout- c++
+scanf- c
+
+
+strict class-based inheritance in java 
+normally 1 file- 1 class and then export it to re-use
+
+---
+java has array, string class (pre-defined)
+
+terminology
+
+interactives-  transition/animation/validation
+js time related code , css selectors, form fields validation
+client side script
+runs some 24x 7 web server
+server exectutes the script
+architecture
+you cannot write file handling code in javascript
+
+in java - write source code and then compile
+in js- no compile- either embed in html
+or need engine- js engine(execution engine-google V8 engine)
+node running the  .js file
+node has two environment
+js has two flavour- client sidescript  and server side (nodejs web server -port number - mongo db - js full stack)
+server side application can be written that can do file handling
+
+
+--
+java, C++, C sharp, python are object oriented programming
+difference between object oriented and object based
+run script- dont compile
+tsc
+
+characteristics
+-----
+abstraction
+encapsulation
+polymorphism
+inheritance
+
+ECMAScript /Adv. Javascript

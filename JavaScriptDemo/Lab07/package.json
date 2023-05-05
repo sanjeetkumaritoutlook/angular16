@@ -1,0 +1,15 @@
+{
+  "name": "lab07",
+  "version": "1.0.0",
+  "description": "",
+  "main": "JSInput.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "readline-sync": "1.4.10"
+  },
+  "author": "",
+  "license": "ISC"
+}

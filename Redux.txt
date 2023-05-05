@@ -1,0 +1,49 @@
+-state==  data which drives our application.
+-------------------------------------------
+-view== a declarive description of The UI.
+----------------------------------------------
+-action=the event that occurs in the application based 
+on the user input. and it will trigger the update and it will 
+update state.
+-----------------------------------------------------------
+-So action in redux is the plain java script object
+which has type and  and payload field.
+------------------------------------------------
+-action creattor is a function which 
+creates and return the action object.return {type:"",payload:""}
+-------------------------------------------------------
+-Reducer -reducer is function which.
+receives a a current state and the action object
+object and decides how top update the state .
+and if necessary return the  new state.
+--------------------------------------------------
+-store- the current application stae is present in the object called store.
+and it is created by createStore() function.
+-------------------------------------------------------------
+-Dispatch-  Reduxt store has method called dispatch .
+when ever we want to update the state call  store.dispatch(). and
+ pass the action object to it.
+ -----------------------------------------------------------
+
+-So dispatching action is like triggering  an event" in the application.
+its like something happed and we want the store to know about it.
+--------------------------------------------------------
+-Thunk-
+Redux Thunk is a middleware that lets you 
+call action creators that return a function instead
+ of an action object. 
+ That function receives the store's dispatch method,
+  which is then used to dispatch regular synchronous actions 
+  inside the function's body once the asynchronous operations
+   have been completed.
+
+   Redux Thunk is middleware that allows you to return functions,
+    rather than just actions, within Redux. This allows for delayed 
+    actions, including working with promises. One of the main use cases 
+    for this middleware is for handling actions that might not be synchronous, 
+    for example, using axios to send a GET request
+    -----------------------------------------------------
+
+
+
+
