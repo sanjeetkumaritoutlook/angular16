@@ -1,0 +1,73 @@
+<div class="header">
+    <img class="logo" src="assets/Capgemini-Emblem.png">
+    <h2 *ngIf="currentSection==1">REGRESSION SUITE</h2>
+    <h2 *ngIf="currentSection==2">iDOC Regression Service</h2>
+</div>
+
+<div class="btns-container" *ngIf="currentSection==1">
+    <button class="cg-button" mat-fab color="primary">Opus PTF Self Service</button>
+    <button  class="cg-button"  mat-fab color="primary" (click)="currentSection=2">iDOC Regression Service</button>
+</div>
+
+<div class="main-container" *ngIf="currentSection==2">
+    <h3>Test Bed for Each Template will be auto loaded upon selection of templates</h3>
+    <div>
+      
+        <div>
+            <mat-form-field appearance="outline">
+            <mat-label color="primary">Select Region</mat-label>
+            <mat-select  (valueChange)="valueChanged($event,'regions')">
+                <mat-option *ngFor="let region of regions" [value]="region.value">{{region.label}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="outline">
+            <mat-label >Select LOB</mat-label>
+            <mat-select  (valueChange)="valueChanged($event,'lobs')">
+                <mat-option *ngFor="let lob of lobs" [value]="lob.value">{{lob.label}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+        </div>
+
+        <div>
+            <mat-form-field appearance="outline">
+            <mat-label>Select Template</mat-label>
+            <mat-select  (valueChange)="valueChanged($event,'templates')">
+                <mat-option *ngFor="let template of templates" [value]="template.value">{{template.label}}</mat-option>
+            </mat-select>
+            </mat-form-field>
+        </div>
+        <div class="submit">
+        <button [disabled]="!selectedTemplate" color="primary" mat-raised-button (click)="submitTemplate()">
+            Submit
+        </button>
+       </div>
+         <div class="m-10">
+            <h3 *ngIf="errorMsg" class="error">
+                {{errorMsg}}
+            </h3>
+         </div>
+    </div>
+
+
+    <div class="m-10">
+        <h3 *ngIf="loader">Please  wait while we are gathering the reports.</h3>
+       <mat-spinner *ngIf="loader"></mat-spinner>
+    </div>
+
+    <div  class="m-10" *ngIf="isSubmitted && selectedTemplate">
+    <div class="submit">
+        <button mat-stroked-button color="primary" (click)="downloadMyFile()" > Download </button>     
+    </div>
+    <h3 class="margin-0">A copy of the result are stored in below path</h3>
+
+   <p class="copied" *ngIf="showCopied" >Copied to ClipBoard.</p> 
+   
+   <div class="submit">
+    <button  mat-button color="primary" (click)="copyToClipboard()">Copy link  </button>     
+   </div>
+   </div>
+</div>
+

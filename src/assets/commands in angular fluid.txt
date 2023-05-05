@@ -1,0 +1,31 @@
+ng new angular-tour-of-heroes
+ng new ui-regression-suite
+ng generate component <component-name>
+ng generate component suite
+ng generate component suite2
+ng generate service hero
+
+ng generate service services/suite
+ng generate component xyz
+ng add @angular/pwa
+
+ng add @angular/material
+ng add @angular/material
+
+ng add _____
+ng test
+ng build
+Angular Material
+Bootstrap- Angular
+Material UI- React
+
+<app-suite></app-suite>
+LM account- 150 members - North America client
+DBS Account, GAR location, Delivery Executive- People Leader- 500 memeber account (CG- biggest account in Hyd-APAC client)
+Engagement Manager
+standalone template- v14
+Signals- v16
+
+Angular 6 Material mat-select change method removed
+
+https://stackoverflow.com/questions/50222738/angular-6-material-mat-select-change-method-removed

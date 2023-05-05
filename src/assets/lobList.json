@@ -1,0 +1,103 @@
+{
+	"regions":{
+		"US":{
+			"lobs": [
+			{
+				"label" :"US Marine",
+				"value"  :"MARINE",
+				"templates": [
+				{
+					"label": "Ocean Marine Project Cargo Policy",
+					"value" : "MARINE_OCEAN_MARINE_PROJECT_CARGO_POLICY"
+				},
+				{
+					"label": "Marine General Liability Policy",
+					"value" : "MARINE_GENERAL_LIABILITY_POLICY"
+				}
+				]
+			},
+			
+			{
+				"label" :"US Casualty Envrionmental ",
+				"value"  :"CASUALTYENV",
+				"templates": [
+				{
+					"label": "Contractors & Professional Services Liability Policy(UD)",
+					"value" : "CASUALTYENV_MARINE_PROJECT_CARGO_POLICY"
+				},
+				{
+					"label": "Marine General Liability Policy",
+					"value" : "MARINE_GENERAL_LIABILITY_POLICY"
+				}
+				]
+			}
+			]
+		},
+		"EU":{
+			"lobs":[
+			{
+				"label" :"US Marine_EU",
+				"value"  :"MARINE_EU",
+				"templates": [
+				{
+					"label": "Ocean Marine Project Cargo Policy_EU",
+					"value" : "MARINE_OCEAN_MARINE_PROJECT_CARGO_POLICY_EU"
+				},
+				{
+					"label": "Marine General Liability Policy_EU",
+					"value" : "MARINE_GENERAL_LIABILITY_POLICY_EU"
+				}
+				]
+			},
+			
+			{
+				"label" :"US Casualty Envrionmental_EU",
+				"value"  :"CASUALTYENV_EU",
+				"templates": [
+				{
+					"label": "Contractors & Professional Services Liability Policy(UD)_EU",
+					"value" : "CASUALTYENV_MARINE_PROJECT_CARGO_POLICY_EU"
+				},
+				{
+					"label": "Marine General Liability Policy_EU",
+					"value" : "MARINE_GENERAL_LIABILITY_POLICY_EU"
+				}
+				]
+			}
+			]
+		},
+		"APAC":{
+			"lobs":[
+			{
+				"label" :"US Marine_APAC",
+				"value"  :"MARINE_APAC",
+				"templates": [
+				{
+					"label": "Ocean Marine Project Cargo Policy_APAC",
+					"value" : "MARINE_OCEAN_MARINE_PROJECT_CARGO_POLICY_APAC"
+				},
+				{
+					"label": "Marine General Liability Policy_APAC",
+					"value" : "MARINE_GENERAL_LIABILITY_POLICY_APAC"
+				}
+				]
+			},
+			
+			{
+				"label" :"US Casualty Envrionmental_APAC ",
+				"value"  :"CASUALTYENV_APAC",
+				"templates": [
+				{
+					"label": "Contractors & Professional Services Liability Policy(UD)_APAC",
+					"value" : "CASUALTYENV_MARINE_PROJECT_CARGO_POLICY_APAC"
+				},
+				{
+					"label": "Marine General Liability Policy_APAC",
+					"value" : "MARINE_GENERAL_LIABILITY_POLICY_APAC"
+				}
+				]
+			}
+			]
+		}
+	}
+}
