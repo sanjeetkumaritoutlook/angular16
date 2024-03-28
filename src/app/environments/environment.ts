@@ -4,9 +4,9 @@
 
 export const environment ={
     production:false,
-    fluidScriptESM: 'https://fluid-test.lmig.com/fluid/build/fluid.esm.js',
-    fluidScriptLegacy: 'https://fluid-test.lmig.com/fluid/build/fluid.js',
-    fluidStyleSheet: 'https://fluid-test.lmig.com/fluid/build/fluid.css'
+    fluidScriptESM: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.esm.js',
+    fluidScriptLegacy: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.js',
+    fluidStyleSheet: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.css'
 }
 
 /*
