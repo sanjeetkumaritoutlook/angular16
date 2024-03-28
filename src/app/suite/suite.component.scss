@@ -1,31 +1,33 @@
 .logo{
-    width:74px;
+    width: 74px;
     position: fixed;
-    top:10px;
+    top: 10px;
+   
 }
-
 .header{
     fluid-title{
-        margin-top:30px;
+        margin-top: 30px;
     }
 }
 fluid-title{
-   text-align: center;
+    text-align: center;
 }
+
 .btns-container{
     max-width: max-content;
-    margin:100px auto;
+    margin: 100px auto;
 }
+
 .main-container{
     max-width: 400px;
-    margin:auto;
+    margin: auto;
 }
 .submit{
-    display:flex;
+    display: flex;
     fluid-button{
-        margin:auto;
+        margin: auto;
     }
 }
 .margin-0{
-    margin:0;
+    margin: 0;
 }

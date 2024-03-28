@@ -6,45 +6,46 @@
 </div>
 
 <div class="btns-container" *ngIf="currentSection==1">
-    <fluid-button label="Opus PTF Self Service" large="true"></fluid-button>
-    <fluid-button (click)="currentSection=2" label="iDOC Regression Service" large="true"></fluid-button>
+    <fluid-button label="Opus PTF Self Service" large="true">
+    </fluid-button>
+
+    <fluid-button (click)="currentSection=2" label="iDOC Regression Service" large="true">
+    </fluid-button>
 </div>
+
 
 <div class="main-container" *ngIf="currentSection==2">
-    <fluid-title level="4">Test Bed for Each Template will be auto loaded upon selection of templates</fluid-title>
+    <fluid-title level="4"> Test Bed for each Template will be auto loaded upon selection of templates </fluid-title>
     <div>
-        <fluid-select label="Region" placeholder="Select Region" (valueChange)="valueChanged($event,'regions')" options="regions">
+        <fluid-select label="Region" placeholder="Select Region" (valueChange)="valueChanged($event,'regions')" [options]="regions">
         </fluid-select>
-        <fluid-select label="LOB" placeholder="Select LOB" #lobElement id="lobElement" (valueChange)="valueChanged($event,'lobs')" options="lobs">
-        </fluid-select>
-        <fluid-select label="Template" placeholder="Select Template" #templateElement id="templateElement" (valueChange)="valueChanged($event,'templates')" options="templates">
-        </fluid-select>
+        <fluid-select label="LOB" placeholder="Select LOB" #lobElement id="lobElement" (valueChange)="valueChanged($event,'lobs')"
+            [options]="lobs"></fluid-select>
+        <fluid-select label="Template" placeholder="Select Template" #templateElement id="templateElement"
+            (valueChange)="valueChanged($event,'templates')" [options]="templates"></fluid-select>
         <div class="submit">
-        <fluid-button [disabled]="!selectedTemplate" (click)="submitTemplate()" label="Submit" large="true">
-        </fluid-button>
-       </div>
-         <div>
+            <fluid-button [disabled]="!selectedTemplate" (click)="submitTemplate()" label="Submit" large="true">
+            </fluid-button>
+        </div>
+        <div>
             <fluid-alert *ngIf="errorMsg" severity="error" visible="true" [message]="errorMsg">
             </fluid-alert>
-         </div>
+        </div>
     </div>
-
-
     <div>
-        <fluid-title *ngIf="loader" level="4">Please  wait while we are gathering the reports.</fluid-title>
-       <fluid-loading-spinner [loading]="loader" centred="true"></fluid-loading-spinner>
+        <fluid-title *ngIf="loader" level="4">Please wait while we are gathering the reports.</fluid-title>
+        <fluid-loading-spinner [loading]="loader" centered="true"> </fluid-loading-spinner>
     </div>
-
     <div *ngIf="isSubmitted && selectedTemplate">
-    <div class="submit">
-        <fluid-button  (click)="downloadMyFile()" label="Download" small="true">  </fluid-button>     
+        <div class="submit">
+            <fluid-button (click)="downloadMyFile()" label="Download" small="true"> </fluid-button>
+        </div>
+        <fluid-title class="margin-0" level="4"> A copy of the result are stored in below path.
+        </fluid-title>
+        <fluid-alert severity="success" [visible]="showCopied" message="Copied to clipboard.">
+        </fluid-alert>
+        <div class="submit">
+            <fluid-button (click)="copyToClipboard()" label="Copy link" small="true"> </fluid-button>
+        </div>
     </div>
-    <fluid-title class="margin-0" level="4">A copy of the result are stored in below path</fluid-title>
-   <fluid-alert severity="success" [visible]="showCopied" message="Copied to ClipBoard."></fluid-alert> 
-   
-   <div class="submit">
-    <fluid-button  (click)="copyToClipboard()" label="Copy link" small="true">  </fluid-button>     
-   </div>
-   </div>
 </div>
-
