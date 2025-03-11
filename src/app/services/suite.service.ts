@@ -5,7 +5,7 @@ import * as rData from './../../assets/lobList.json';
   providedIn: 'root'
 })
 export class SuiteService {
-apiUrl ='https://mocki.io/v1/51f8f27c-4ed8-498f-98ca-1a203cb8bd85';
+apiUrl ='https://jsonplaceholder.typicode.com/posts';
 //apiUrl ='https://mocki.io/v1/51f8f27c-4ed8d-498f-98ca-1a203cb8bd85';
 
 jsonData:any =rData;
