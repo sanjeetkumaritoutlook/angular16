@@ -4,9 +4,12 @@
 
 export const environment ={
     production:false,
-    fluidScriptESM: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.esm.js',
-    fluidScriptLegacy: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.js',
-    fluidStyleSheet: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.css'
+   // fluidScriptESM: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.esm.js',
+    //fluidScriptLegacy: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.js',
+    //fluidStyleSheet: 'https://dsfe50dspcxki.cloudfront.net/fluid/build/fluid.css'
+	fluidScriptESM: 'https://fluid.libertymutual.com/fluid/build/fluid.esm.js',
+    fluidScriptLegacy: 'https://fluid.libertymutual.com/fluid/build/fluid.js',
+    fluidStyleSheet: 'https://fluid.libertymutual.com/fluid/build/fluid.css'
 }
 
 /*
